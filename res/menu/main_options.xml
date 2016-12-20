@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item android:id="@+id/submenu"
+          android:icon="@drawable/ic_menu"
+          android:title="@string/str_options"
+          android:showAsAction="ifRoom" >
+        
+        <menu>
+			<item android:id="@+id/menu_item_pending_message"
+		          android:title="@string/str_pending_message" />
+			<item android:id="@+id/menu_item_profile"
+		          android:title="@string/str_profile" />
+			<item android:id="@+id/menu_item_log_out"
+		          android:title="@string/str_log_out" />
+        </menu>
+        
+    </item>
+
+</menu>

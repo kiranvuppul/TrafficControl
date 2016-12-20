@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="inforGray1">#cccccc</color> <!-- Copy Right -->
+	<color name="inforGray2">#b3b3b3</color> <!-- Setup Text Color  -->
+	<color name="inforGray3">#999999</color> <!-- Hint, Readonly Record View Header, Child List View Cell -->
+	<color name="inforGray4">#808080</color> <!-- User ID Focused -->
+	<color name="inforGray5">#4C777777</color> <!-- ### Record View Field Readonly 30% Alpha-->
+	<color name="inforGray6">#4d4d4d</color> <!-- App Title -->
+	<color name="inforGray7">#333333</color> <!-- ### Most Regular Text, List View Cell, Record View Field/Label -->
+	<color name="inforGray8">#DEDEDE</color> <!-- Main screen button background header  -->
+	<color name="inforGray9">#737373</color> <!-- Dark Button Color -->	
+		
+	<color name="inforBlue1">#12A3F7</color> <!-- Infor Blue -->
+	<color name="inforBlue2">#087dc2</color> <!-- Button Pressed -->	
+	<color name="inforBlue3">#CC12A3F7</color> <!-- Menu selection color 80% Button Pressed -->	
+	
+	<color name="inforRed1">#D5000E</color> <!-- Infor Red -->
+	<color name="inforRed2">#D5001F</color> <!-- Button Pressed -->
+
+	<!-- List View Colors -->
+	<color name="listViewTextTitle">@color/inforBlue1</color>
+	<color name="listViewText">@color/inforGray7</color>		
+	<color name="listViewTextSelected">@color/white</color>	
+	<color name="listViewCellHilited">@color/inforBlue1</color>
+			
+	<!-- Child List View Colors -->		
+	<color name="childListViewTextTitle">@color/white</color>
+	<color name="childListViewText">@color/inforGray3</color>	
+	<color name="childListViewHeader">@color/inforGray3</color>		
+	<color name="childListViewHeaderHilited">@color/inforRed1</color>
+	
+	<!-- Record View Colors -->		
+	<color name="recordViewSection">@color/inforGray3</color>
+	<color name="recordViewField">@color/inforGray7</color>
+	<color name="recordViewValue">@color/inforGray7</color>
+	<color name="recordViewFieldReadonly">@color/inforGray5</color>
+	<color name="recordViewValueReadonly">@color/inforGray5</color>			
+		
+	<!-- Nav Drawer View Colors -->		
+	<color name="navDrawerBackground">#333333</color>
+	<color name="navDrawerFadeBackground">#33000000</color>
+	<color name="navDrawerSeparatorDark">#262626</color> 
+	<color name="navDrawerSeparatorLight">#3B3B3B</color>		
+				
+	<color name="textview_background_light">#ffffff</color>
+	<color name="default_background">#e5e5e5</color>
+	<color name="default_separator">#cccccc</color>	
+	<color name="lightgray">#E6E6E6</color>
+	<color name="mediumgray">#D1D1D1</color>
+	<color name="darkgray">#86898c</color>
+	<color name="black">@android:color/black</color>
+	<color name="listText">#2f2e35</color>
+	<color name="listPrimaryRow">#ffffff</color>
+	<color name="listSecondaryRow">#ebebeb</color>
+	<color name="grayButtonStart">#ADB3B7</color>
+	<color name="grayButtonEnd">#ADB3B7</color>
+	<color name="btnBlueSelectedStart">@color/inforBlue1</color>
+	<color name="btnBlueSelectedEnd">@color/inforBlue2</color>
+	<color name="white">@android:color/white</color>
+	<color name="lightRed1">#A0FF0000</color>
+	<color name="lightRed2">#60FF0000</color>	
+	<color name="red">@color/inforRed1</color>		
+	<color name="transparent">@android:color/transparent</color>
+	<color name="hilite_blue">@color/inforBlue1</color>
+	<color name="semi_opaue_white">#90ffffff</color>
+	<color name="greenButtonStart">#BADD31</color>
+	<color name="greenButtonEnd">#879F22</color>
+	<color name="redButtonStart">#FD0705</color>
+	<color name="redButtonEnd">#D30601</color>
+	<color name="listselector">@color/inforBlue1</color>
+	<color name="eamheader_background">#F3F3F3</color>
+	<color name="eambutton_background">@color/inforGray9</color>
+	<color name="eam_main_buttons_background">@color/inforGray8</color>
+	<color name="labelEnabled">#666666</color>
+	<color name="labelReadonly">#cccccc</color>	
+	<color name="textEnabled">#4d4d4d</color>
+	<color name="textReadonly">#cccccc</color>	
+	
+	<!-- Child List view color if Not Found, Found and Different Location -->
+	<color name="chldLstFound">#B3FFB3</color>
+	<color name="chldLstNotFound">#FFCCCC</color>
+	<color name="chldLstDiffLoc">#FFFFB3</color>
+
+</resources>

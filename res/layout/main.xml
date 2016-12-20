@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		      xmlns:tools="http://schemas.android.com/tools"
+		      android:id="@+id/rlLinearLayout"
+		      android:layout_width="match_parent"
+		      android:layout_height="match_parent"
+		      android:background="@color/white"
+		      android:orientation="vertical"
+		      android:padding="2dp" >
+
+    <ScrollView android:id="@+id/svScroll"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        android:background="@color/white"
+		        android:fillViewport="true"
+		        android:isScrollContainer="true"
+		        tools:ignore="ContentDescription" >
+
+        <LinearLayout android:id="@+id/glEnhExpDetails"
+		              android:layout_width="fill_parent"
+		              android:layout_height="wrap_content"
+		              android:background="@color/white"
+		              android:focusable="true"
+		              android:focusableInTouchMode="true"
+		              android:orientation="vertical" >
+
+            <LinearLayout android:layout_width="fill_parent"
+			              android:layout_height="wrap_content"
+			              android:layout_margin="10dp"
+			              android:background="@color/white"
+			              android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="fill_parent"
+			                  android:layout_height="wrap_content"
+			                  android:layout_margin="0dp"
+			                  android:orientation="horizontal" >
+
+                    <EditText android:id="@+id/etViolatorMsg"
+	                          style="@style/RecordViewValueText"
+	                          android:hint="@string/str_desc"
+	                          android:layout_width="fill_parent"
+	                          android:layout_height="wrap_content"
+	                          android:layout_gravity="left"
+	                          android:layout_marginLeft="5dp"
+	                          android:layout_marginRight="5dp"
+	                          android:layout_weight="1"
+	                          android:background="@color/transparent"
+	                          android:gravity="center_vertical|left"
+	                          android:minHeight="38dp" />
+                </LinearLayout>
+
+                <View android:layout_width="fill_parent"
+                      android:layout_height="1dp"
+                      android:background="#808080" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+		                  android:layout_height="fill_parent"
+		                  android:layout_margin="6dp"
+		                  android:background="@color/lightgray"
+		                  android:orientation="horizontal" >
+
+			        <WebView android:id="@+id/webView1"
+				             android:layout_width="wrap_content"
+				             android:layout_height="fill_parent"
+				             android:layout_gravity="center"
+				             android:adjustViewBounds="true"
+				             android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/llTools"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:background="@color/eamheader_background"
+		          android:orientation="horizontal" >
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+            <ImageButton android:id="@+id/ibSendMail"
+			             android:layout_width="50dp"
+			             android:layout_height="50dp"
+			             android:layout_alignParentLeft="true"
+			             android:layout_marginLeft="10dp"
+			             android:background="@color/transparent"
+			             android:padding="10dp"
+			             android:scaleType="centerCrop"
+			             android:src="@drawable/ic_button_mail"
+			             android:visibility="visible"
+			             tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+            <ImageButton android:id="@+id/ibOpenCamera"
+			             android:layout_width="50dp"
+			             android:layout_height="50dp"
+			             android:layout_centerInParent="true"
+			             android:layout_marginLeft="10dp"
+			             android:background="@color/transparent"
+			             android:padding="10dp"
+			             android:scaleType="centerCrop"
+			             android:src="@drawable/ic_button_camera"
+			             android:visibility="visible"
+			             tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:orientation="horizontal" >
+
+            <ImageButton android:id="@+id/ibSave"
+		                 android:layout_width="50dp"
+		                 android:layout_height="50dp"
+		                 android:layout_alignParentRight="true"
+		                 android:layout_marginRight="10dp"
+		                 android:background="@color/transparent"
+		                 android:padding="10dp"
+		                 android:scaleType="centerCrop"
+		                 android:src="@drawable/ic_button_save"
+		                 android:visibility="visible"
+		                 tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

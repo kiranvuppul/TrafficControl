@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/str_enter_name"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/mediumgray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/userMailId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/str_enter_mail_id"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/mediumgray"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/userCompany"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/str_enter_company_name"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/mediumgray"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/userNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/str_enter_phone_number"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/mediumgray"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/userTvID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/str_enter_TV"
+                android:imeOptions="actionDone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/mediumgray"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/userLocation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/str_enter_location"
+                android:imeOptions="actionDone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/mediumgray"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <Button
+                    android:id="@+id/resetBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/ic_button_blue"
+                    android:text="@string/str_re_set"
+                    android:textColor="@color/white"
+                    style="@android:style/ButtonBar"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/setProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp" 
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/ic_button_blue"
+                    android:text="@string/str_set_profile"
+                    android:textColor="@color/white"
+                    style="@android:style/ButtonBar"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

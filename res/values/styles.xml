@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="AppStyle" parent="@android:style/Theme.Holo.Light">
+	    <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+	    <item name="android:actionBarTabStyle">@style/ActionBarStyle</item>
+	    <item name="android:actionBarStyle">@style/thin_ab_style</item>	    
+	</style>
+	
+    <style name="ActionBarStyle" parent="@android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar_selector</item>
+    </style>
+    
+    <style name="thin_ab_style" parent="android:Widget.Holo.ActionBar">
+        <item name="android:height">46dp</item>
+    </style>
+	
+	<style name="DropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+    	<item name="android:listSelector">@color/inforBlue3</item>
+	</style>
+	
+	<style name="ActivityAsDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowCloseOnTouchOutside">false</item>
+	</style>
+	
+	<style name="HTMLAsDialog" parent="@android:style/Theme.Holo.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowCloseOnTouchOutside">false</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	</style>		 
+	
+	<style name="SyncActivityDialog" parent="@style/ActivityAsDialog">
+	    <item name="android:windowAnimationStyle">@style/SyncAnimation</item>
+	</style>
+
+	
+	<style name="SyncActivityDialogWithoutAnim" parent="@style/ActivityAsDialog">
+	    <item name="android:windowAnimationStyle">@style/noAnimTheme</item>
+	</style>
+
+	<style name="ButtonText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:paddingTop">5dp</item>
+		<item name="android:paddingBottom">5dp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="BlankTextSmall" parent="@style/ButtonText">
+		<item name="android:textSize">10sp</item>
+	</style>
+	
+	<style name="ButtonTextSmall" parent="@style/ButtonText">
+		<item name="android:textSize">14sp</item>
+	</style>
+	
+	<style name="LabelTitleText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:textColor">@color/darkgray</item>
+		<item name="android:gravity">center</item>
+		<item name="android:paddingTop">7dp</item>
+		<item name="android:paddingBottom">7dp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+	
+	<style name="NumberLabelTitleText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:textColor">@color/darkgray</item>
+		<item name="android:gravity">center</item>
+		<item name="android:paddingTop">7dp</item>
+		<item name="android:paddingBottom">7dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">30sp</item>
+	</style>
+
+	<style name="PrimaryLabelText" parent="AppStyle">
+		<item name="android:textSize">16sp</item>
+	</style>
+
+	<style name="PrimaryLabelTextBold" parent="PrimaryLabelText">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="SmallText" parent="AppStyle">
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="SmallBlackText" parent="SmallText">
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="SmallerText" parent="AppStyle">
+		<item name="android:textSize">10sp</item>
+	</style>
+
+	<style name="SmallerBlackText" parent="SmallerText">
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="BoldText" parent="AppStyle">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="LargeBoldText" parent="BoldText">
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="LargeBlackText" parent="AppStyle">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="LargeBoldBlackText" parent="LargeBoldText">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="SmallBoldText" parent="BoldText">
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="DetailsText" parent="AppStyle">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="DetailsTextBold" parent="DetailsText">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="MediumDetailsText" parent="AppStyle">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="MediumDetailsTextBold" parent="MediumDetailsText">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="BulletedItem">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">25dp</item>
+		<item name="android:lineSpacingExtra">3sp</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+	
+	<style name="TabText">
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="LabelFieldText" parent="AppStyle">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="LabelFieldMediumText" parent="LabelFieldText">
+		<item name="android:textSize">14sp</item>
+	</style>
+	
+	<style name="LabelListNoRecords" parent="LabelTitleText">
+		<item name="android:textColor">@color/recordViewFieldReadonly</item>
+		<item name="android:textSize">18sp</item>	
+	</style>			
+	
+	<style name="TextFieldText" parent="AppStyle">
+		<item name="android:textCursorDrawable">@null</item>			    
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/darkgray</item>
+	</style>
+
+	<!-- List View Text Style -->
+	<style name="ListViewText" parent="TextFieldText">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/listViewText</item>
+	</style>
+	
+	<style name="ListViewTitleText" parent="ListViewText">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/listViewTextTitle</item>
+	</style>
+		
+	<!-- Child List View Text Style -->
+	<style name="ChildListViewText" parent="TextFieldText">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">@color/childListViewText</item>
+	</style>
+	
+	<style name="ChildListViewTitleText" parent="ChildListViewText">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/childListViewTextTitle</item>
+	</style>
+
+	<!-- Record View Text Style -->
+	<style name="RecordViewFieldText" parent="TextFieldText">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/recordViewField</item>
+	</style>
+	<style name="RecordViewValueText" parent="RecordViewFieldText">
+		<item name="android:textColor">@color/recordViewValue</item>
+	</style>
+	<style name="RecordViewValueDescText" parent="RecordViewFieldText">
+		<item name="android:textSize">14sp</item>
+	</style>	
+	<style name="RecordViewSectionText" parent="RecordViewFieldText">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textColor">@color/recordViewSection</item>
+	</style>
+			
+	<!-- Comment View Text Style -->
+	<style name="CommentDetailFieldText" parent="TextFieldText">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/recordViewValue</item>
+	</style>
+	<style name="CommentInfoFieldText" parent="CommentDetailFieldText">
+		<item name="android:textColor">@color/inforGray3</item>
+		<item name="android:textSize">14sp</item>		
+	</style>
+	
+	<!--  -->		
+	
+	<style name="TextFieldBlackText" parent="TextFieldText">
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="TextFieldMediumText" parent="TextFieldText">
+	    <item name="android:textColor">@color/inforGray7</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<style name="TextFieldMediumBlackText" parent="TextFieldMediumText">
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="TextFieldMediumWhiteText" parent="TextFieldMediumText">
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="TextFieldMediumBoldWhiteText" parent="TextFieldMediumWhiteText">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextFieldSmallText" parent="TextFieldText">
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="TextFieldSmallBlackText" parent="TextFieldSmallText">
+		<item name="android:textColor">@color/black</item>
+	</style>
+	
+	<style name="TextFieldReq">
+		<item name="android:textColor">@color/red</item>
+	</style>
+
+	<style name="HiliteText" parent="AppStyle">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@color/inforBlue1</item>
+	</style>
+
+	<!-- Calendar Dialog styles -->
+	<style name="CalendarDialog" parent="@android:style/Theme">
+		<item name="android:calendarViewStyle">@style/CalendarView</item>
+		<item name="android:buttonStyle">@style/CalendarDialogButton</item>
+		<item name="android:dialogTheme">@style/CalendarDialog</item>
+	</style>
+
+	<style parent="@android:style/Widget.CalendarView" name="CalendarView">
+		<item name="android:showWeekNumber">false</item>
+		<item name="android:weekSeparatorLineColor">@color/white</item>
+		<item name="android:shownWeekCount">5</item>
+	</style>
+
+	<style parent="@android:style/Widget.Button" name="CalendarDialogButton">
+		<item name="android:background">@drawable/ic_button_gray</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">2</item>
+	</style>
+
+	<style parent="@android:style/Theme.Dialog" name="CalendarDialog">
+		<item name="android:windowBackground">@color/transparent</item>
+	</style>
+	
+	<style name="LovAnimation" parent="android:Animation" >     
+        <item name="android:windowEnterAnimation">@animator/right_in</item> 
+        <item name="android:windowExitAnimation">@animator/right_out</item> 
+    </style> 
+    
+	<style name="SettingAnimation" parent="android:Animation" >     
+        <item name="android:windowEnterAnimation">@animator/right_in</item> 
+        <item name="android:windowExitAnimation">@animator/right_out</item> 
+    </style> 
+    
+	<style name="NotificationAnimation" parent="android:Animation" >     
+        <item name="android:windowEnterAnimation">@animator/top_in</item> 
+        <item name="android:windowExitAnimation">@animator/top_out</item> 
+    </style>
+    
+	<style name="SyncAnimation" parent="android:Animation" >     
+        <item name="android:windowEnterAnimation">@animator/slide_in_from_bottom</item> 
+        <item name="android:windowExitAnimation">@animator/slide_out_to_bottom</item> 
+    </style>
+    
+	<style name="noAnimTheme" parent="android:Animation" >     
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    
+    <style parent="@android:attr/listViewStyle" name="treeViewListStyle">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:divider">@drawable/divider</item>
+    </style>
+	
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rlRelativeLayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:background="@color/white"
+				android:padding="0dp">
+				
+	<GridLayout android:id="@+id/glLogin" 
+	    		android:layout_width="fill_parent"
+				android:layout_height="400dp" 
+				android:layout_centerInParent="true"
+				android:background="@color/white" >
+							
+		<TextView android:id="@+id/tvAppName" 
+		          android:layout_width="wrap_content" 
+		    	  android:layout_height="wrap_content" 
+		    	  android:layout_column="0" 
+		    	  android:layout_columnSpan="3" 
+		    	  android:layout_gravity="center"
+		    	  android:layout_marginTop="40dp" 
+		    	  android:layout_row="7" 
+		    	  android:textSize="28sp"
+		    	  android:text="@string/str_hyd_traffic_control" 
+		    	  style="@style/LabelTitleText"
+		    	  android:textColor="@color/darkgray"/>
+			  
+			  <RelativeLayout android:id="@+id/rlPassword" 
+			      			  android:layout_width="match_parent"
+				  			  android:layout_height="50dp" 
+				  			  android:layout_column="0" 
+				  			  android:layout_columnSpan="3" 
+				  			  android:layout_gravity="center|center_vertical" 
+				  			  android:layout_marginTop="10dp" 
+				  			  android:layout_row="8" 
+				  			  android:orientation="horizontal">
+			  	 
+				  <ImageView android:id="@+id/ivPassword" 
+				     		 android:layout_width="40dp"
+            				 android:layout_height="18dp" 
+            				 android:layout_marginLeft="5dp"  
+            				 android:layout_marginTop="10dp"  
+            		  		 android:scaleType="fitCenter" 
+            		  		 android:src="@drawable/ic_password"/>
+				  				  
+				  <EditText android:id="@+id/etPassword" 
+    	    			    android:layout_width="match_parent" 
+						    android:layout_marginLeft="45dp"
+						    android:layout_marginRight="5dp"
+				      	   	android:layout_height="wrap_content" 
+					  	   	android:layout_gravity="fill_horizontal|center_vertical"
+					  	   	android:textSize="18sp" 
+					  	   	android:ems="10" 
+					  	   	android:textColorHint="@color/mediumgray"
+					  	   	android:imeOptions="actionDone"
+					  	   	android:textCursorDrawable="@null" 
+					  	   	android:textColor="@color/black"
+					  	   	android:inputType="textPassword" />	
+					  	   	 
+			</RelativeLayout>
+			
+			<Button android:id="@+id/btnLogin" 
+					android:layout_width="match_parent" 
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_height="55dp"
+					android:layout_column="0" 
+					android:layout_columnSpan="3"
+					android:layout_gravity="center" 
+					android:layout_marginTop="20dp" 
+					android:layout_row="9"
+					android:background="@drawable/ic_button_blue" 
+					android:textColor="@color/white" 	
+					android:textSize="20sp" 				
+					android:gravity="center"
+					android:text="@string/str_sign_in" />
+			
+			<Button android:id="@+id/btnSetup" 
+					android:layout_width="match_parent" 
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_height="40dp"
+					android:layout_column="0" 
+					android:layout_columnSpan="3"
+					android:layout_gravity="top|center_horizontal" 
+					android:layout_marginTop="10dp"
+					android:layout_row="10" 
+					android:gravity="center"
+					android:background="@color/white"
+					android:textColor="@color/lightgray"	
+					android:textSize="14sp"	
+					android:textAllCaps="true"								 
+					android:text="@string/str_setup"/>
+			
+			<Button android:id="@+id/btnChngPwd" 
+					android:layout_width="match_parent" 
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_height="40dp"
+					android:layout_column="0" 
+					android:layout_columnSpan="3"
+					android:layout_gravity="top|center_horizontal" 
+					android:layout_marginTop="10dp"
+					android:layout_row="11" 
+					android:gravity="center"
+					android:background="@color/white"
+					android:textColor="@color/lightgray"	
+					android:textSize="14sp"	
+					android:textAllCaps="true"								 
+					android:text="@string/str_chngpwd"/>
+			
+		</GridLayout>
+		
+</RelativeLayout>

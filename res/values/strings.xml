@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="str_hyd_traffic_control">Cyberabad Traffic Volunteer</string>
+	<string name="str_sign_in">Sign In</string>
+	<string name="str_setup">Setup</string>
+	<string name="str_filepath">File Path</string>
+	<string name="str_desc">Violation Description</string>
+	<string name="str_chngpwd">Change Password</string>
+	<string name="menu_settings">File Path</string>
+	<string name="str_ok">OK</string>
+	<string name="str_options">Options</string>
+	<string name="str_sync_data">Sync</string>
+	<string name="str_log_out">Sign Out</string>
+	<string name="str_msg_sent_success">Message sent successful.</string>
+	<string name="str_enter_password">Enter Password</string>
+	<string name="str_enter_new_password">Enter New Password</string>
+	<string name="str_enter_old_password">Enter Old Password</string>
+	<string name="str_enter_password_again">Enter Password Again</string>
+	<string name="str_set_password">Set Password</string>
+	<string name="str_reset_password">Reset Password</string>
+	<string name="str_create_account">Sign In</string>
+	<string name="str_enter_name">Enter Name</string>
+	<string name="str_enter_mail_id">Enter Official Mail Id</string>
+	<string name="str_enter_phone_number">Enter Phone Number</string>
+	<string name="str_enter_TV">Enter TV Number</string>
+	<string name="str_enter_company_name">Enter Company Name</string>
+	<string name="str_enter_smtp_server">Enter SMTP Server Name</string>
+	<string name="str_set_profile">Set Profile</string>
+	<string name="str_profile">Profile</string>
+	<string name="str_re_set">Reset</string>
+	<string name="str_enter_location">Enter Location</string>
+	<string name="str_pending_message">Pending Message</string>
+	<string name="str_pls_sel_img">Please select a image to send mail.</string>
+</resources>
